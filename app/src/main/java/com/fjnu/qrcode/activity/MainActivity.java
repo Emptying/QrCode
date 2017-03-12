@@ -239,7 +239,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * 连接wifi
      *
-     * @author Leon Liang
+     * @author Emptying
      * @created 2016/9/7 9:59
      */
     private String connectWifi(String strResult) {
@@ -310,7 +310,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent5);
                 break;
             default:
-
                 break;
         }
     }

@@ -1,5 +1,8 @@
 package com.fjnu.qrcode.server;
 
+import android.content.Context;
+import android.widget.Toast;
+
 import com.fjnu.qrcode.model.WifiMsg;
 
 import java.io.BufferedReader;
@@ -29,6 +32,10 @@ import java.util.regex.Pattern;
  * @created 2016/9/12
  */
 public class WifiManage {
+    Context mContext;
+    public WifiManage(Context context){
+        mContext = context;
+    }
 
     /**
      * 返回所有的wifi信息
@@ -59,6 +66,8 @@ public class WifiManage {
             process.waitFor();
         } catch (Exception e) {
             e.printStackTrace();
+            Toast.makeText(mContext, "此功能需要取得root权限", Toast.LENGTH_SHORT).show();
+
         } finally {
             try {
                 //安全问题

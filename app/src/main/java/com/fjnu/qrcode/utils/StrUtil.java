@@ -69,7 +69,7 @@ public class StrUtil {
     /**
      * 时间字符串转时间戳
      *
-     * @author Leon Liang
+     * @author Emptying
      * @created 2016/7/30 15:30
      */
     public static int timeStringToInt(String timeStr) {

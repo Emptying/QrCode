@@ -133,15 +133,16 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
         btnWechatQr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                try {
-                    Uri uri = Uri.parse("weixin://");//最新版微信不能直接跳转扫一扫，只能跳转微信首页
-                    //Uri uri = Uri.parse("weixin://dl/scan");
+                Toast.makeText(CaptureActivity.this, "微信扫一扫接口暂时失效", Toast.LENGTH_SHORT).show();
+/*                try {
+                    //Uri uri = Uri.parse("weixin://");//最新版微信不能直接跳转扫一扫，只能跳转微信首页
+                    Uri uri = Uri.parse("weixin://dl/scan");
                     Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                     startActivity(intent);
                 } catch (Exception e) {
                     //若无法正常跳转，在此进行错误处理
                     Toast.makeText(CaptureActivity.this, "无法跳转到微信，请检查您是否安装了微信！", Toast.LENGTH_SHORT).show();
-                }
+                }*/
             }
         });
     }

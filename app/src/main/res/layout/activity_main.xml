@@ -66,6 +66,7 @@
                 android:layout_height="wrap_content"
                 android:text="分享通讯录" />
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/share_wifi"
             style="@style/share_ly">

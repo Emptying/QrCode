@@ -55,13 +55,15 @@ public class ShareTxtActivity extends AppCompatActivity {
         if (!contentString.equals("")) {
 
             Dialog dialog = DialogUtil.getQrDialog(ShareTxtActivity.this, "扫一扫获取信息", contentString,
-                    mCheckBox.isChecked() ? BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher)
+                    mCheckBox.isChecked() ? BitmapFactory.decodeResource(getResources(), R.mipmap.ic_logo)
                             : null);
             //            //根据字符串生成二维码图片并显示在界面上，第二个参数为图片的大小
             //            Bitmap qrCodeBitmap = EncodingUtils.createQRCode(contentString, 500, 500, mCheckBox.isChecked()
             //                    ? BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher) : null);
             //            qrImgImageView.setImageBitmap(qrCodeBitmap);
             dialog.show();
+
+
 
         } else {
             StrUtil.showToast(ShareTxtActivity.this, "输入为空", Toast.LENGTH_SHORT);

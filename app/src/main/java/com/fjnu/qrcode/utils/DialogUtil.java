@@ -39,7 +39,7 @@ public class DialogUtil {
 
         //创建一个对话框
         Dialog alertDialog = new AlertDialog.Builder(context).setTitle(title).setView(v1)
-                .setIcon(R.mipmap.ic_launcher)
+                .setIcon(R.mipmap.ic_logo)
                 //                .setNegativeButton("取消", new DialogInterface.OnClickListener() {
                 //                    @Override
                 //                    public void onClick(DialogInterface dialog, int which) {
@@ -63,7 +63,7 @@ public class DialogUtil {
      * @return
      */
     static public Dialog getUrlDialog(final Context context, final String contentStr) {
-        Dialog alertDialog = new AlertDialog.Builder(context).setTitle(contentStr).setIcon(R.mipmap.ic_launcher)
+        Dialog alertDialog = new AlertDialog.Builder(context).setTitle(contentStr).setIcon(R.mipmap.ic_logo)
                 .setMessage("得到的内容似乎是一个网址，需要用浏览器打开吗")
                 .setNegativeButton("复制内容", new DialogInterface.OnClickListener() {
                     @Override
@@ -96,7 +96,7 @@ public class DialogUtil {
      */
     static public Dialog getTxtDialog(final Context context, String title, final String contentStr) {
         //创建一个对话框
-        Dialog alertDialog = new AlertDialog.Builder(context).setTitle(title).setIcon(R.mipmap.ic_launcher)
+        Dialog alertDialog = new AlertDialog.Builder(context).setTitle(title).setIcon(R.mipmap.ic_logo)
                 .setMessage(contentStr).setNegativeButton("取消", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -123,7 +123,7 @@ public class DialogUtil {
     static public Dialog getDialog(final Context context, String title, final String contentStr,
             Dialog.OnClickListener listener) {
         //创建一个对话框
-        Dialog alertDialog = new AlertDialog.Builder(context).setTitle(title).setIcon(R.mipmap.ic_launcher)
+        Dialog alertDialog = new AlertDialog.Builder(context).setTitle(title).setIcon(R.mipmap.ic_logo)
                 .setMessage(contentStr).setNegativeButton("取消", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

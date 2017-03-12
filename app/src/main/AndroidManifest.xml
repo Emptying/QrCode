@@ -32,21 +32,21 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.fjnu.com.fjnu.qrcode.activity.MainActivity">
+        <activity android:name="com.fjnu.qrcode.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.fjnu.com.fjnu.qrcode.activity.ShareTxtActivity" />
-        <activity android:name="com.fjnu.com.fjnu.qrcode.activity.ShareWifiActivity" />
-        <activity android:name="com.fjnu.com.fjnu.qrcode.activity.ShareCardListActivity" />
-        <activity android:name="com.fjnu.com.fjnu.qrcode.activity.QrHistoryActivity"/>
+        <activity android:name="com.fjnu.qrcode.activity.ShareTxtActivity" />
+        <activity android:name="com.fjnu.qrcode.activity.ShareWifiActivity" />
+        <activity android:name="com.fjnu.qrcode.activity.ShareCardListActivity" />
+        <activity android:name="com.fjnu.qrcode.activity.QrHistoryActivity"/>
     </application>
 
 </manifest>

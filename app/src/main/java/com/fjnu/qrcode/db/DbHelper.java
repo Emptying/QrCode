@@ -37,7 +37,7 @@ public class DbHelper implements DbUtils.DbUpgradeListener {
     /**
      * dbUtils初始化 dbHlper构造函数
      *
-     * @author Leon Liang
+     * @author Emptying
      * @created 2016/8/20 10:33
      */
     private DbHelper(Context context) {
@@ -54,7 +54,7 @@ public class DbHelper implements DbUtils.DbUpgradeListener {
      *
      * @param
      * @return
-     * @author Stark Zhou
+     * @author Emptying
      * @created 2016/8/16 9:41
      */
     public boolean ifDbFileExist() {
@@ -72,7 +72,7 @@ public class DbHelper implements DbUtils.DbUpgradeListener {
     /**
      * 只实例化一次
      *
-     * @author Leon Liang
+     * @author Emptying
      * @created 2016/7/26 14:55
      */
     public static DbHelper getInstance(Context context) {
@@ -91,7 +91,7 @@ public class DbHelper implements DbUtils.DbUpgradeListener {
     /**
      * 插入单条记录
      *
-     * @author Leon Liang
+     * @author Emptying
      * @created 2016/7/26 14:56
      */
     public synchronized boolean save(Object entity) {
@@ -106,7 +106,7 @@ public class DbHelper implements DbUtils.DbUpgradeListener {
     /**
      * 插入表数据到数据库
      *
-     * @author Leon Liang
+     * @author Emptying
      * @created 2016/7/26 15:56
      */
     public synchronized boolean saveAll(List<?> entity) {
@@ -121,7 +121,7 @@ public class DbHelper implements DbUtils.DbUpgradeListener {
     /**
      * 删除类对应的表
      *
-     * @author Leon Liang
+     * @author Emptying
      * @created 2016/7/27 10:36
      */
     public synchronized boolean dropByTable(Class<?> entity) {
@@ -137,7 +137,7 @@ public class DbHelper implements DbUtils.DbUpgradeListener {
     /**
      * 删除一个对象
      *
-     * @author Leon Liang
+     * @author Emptying
      * @created 2016/7/26 14:57
      */
     public synchronized boolean deleteByEntity(Object entity) {
@@ -154,7 +154,7 @@ public class DbHelper implements DbUtils.DbUpgradeListener {
     /**
      * 从数据库 删除链表
      *
-     * @author Leon Liang
+     * @author Emptying
      * @created 2016/7/26 14:57
      */
     public synchronized boolean deleteByList(List<?> entity) {
@@ -170,7 +170,7 @@ public class DbHelper implements DbUtils.DbUpgradeListener {
     /**
      * 按条件删除 / 列名 对应的值
      *
-     * @author Leon Liang
+     * @author Emptying
      * @created 2016/7/26 15:58
      */
     public synchronized boolean deleteByValue(Class<?> entity, String colun, String value) {
@@ -187,7 +187,7 @@ public class DbHelper implements DbUtils.DbUpgradeListener {
     /**
      * 更新或者插入表数据
      *
-     * @author Leon Liang
+     * @author Emptying
      * @created 2016/7/26 15:59
      */
     public synchronized boolean update(Object entity) {
@@ -203,7 +203,7 @@ public class DbHelper implements DbUtils.DbUpgradeListener {
     /**
      * 更新指定列 单个对象
      *
-     * @author Leon Liang
+     * @author Emptying
      * @created 2016/8/20 10:31
      */
     public synchronized boolean update(Object entity, String... updateColumnNames) {
@@ -220,7 +220,7 @@ public class DbHelper implements DbUtils.DbUpgradeListener {
     /**
      * 更新指定列 链表
      *
-     * @author Leon Liang
+     * @author Emptying
      * @created 2016/8/20 10:31
      */
     public synchronized boolean updateAll(List<?> entity, String... updateColumnNames) {
@@ -238,7 +238,7 @@ public class DbHelper implements DbUtils.DbUpgradeListener {
     /**
      * 更新全部
      *
-     * @author Leon Liang
+     * @author Emptying
      * @created 2016/8/20 10:31
      */
     public synchronized boolean updateAll(List<?> entity) {
@@ -255,7 +255,7 @@ public class DbHelper implements DbUtils.DbUpgradeListener {
     /**
      * 根据id查找一条记录
      *
-     * @author Leon Liang
+     * @author Emptying
      * @created 2016/7/26 16:00
      */
     public synchronized <T> Object searchOne(Class<T> cla, String id) {
@@ -271,7 +271,7 @@ public class DbHelper implements DbUtils.DbUpgradeListener {
     /**
      * 查找全部
      *
-     * @author Leon Liang
+     * @author Emptying
      * @created 2016/7/26 16:00
      */
     public synchronized <T> List<T> search(Class<T> entity) {
@@ -287,7 +287,7 @@ public class DbHelper implements DbUtils.DbUpgradeListener {
     /**
      * 查找全部 并以id排序输出
      *
-     * @author Leon Liang
+     * @author Emptying
      * @created 2016/7/26 16:10
      */
     public synchronized <T> List<T> searchAll(Class<T> entityClass) {
@@ -301,7 +301,7 @@ public class DbHelper implements DbUtils.DbUpgradeListener {
     /**
      * 条件查找
      *
-     * @author Leon Liang
+     * @author Emptying
      * @created 2016/7/26 15:57
      */
     public synchronized <T> List<T> searchAllByValue(Class<T> entityClass, String column, String value) {
@@ -315,7 +315,7 @@ public class DbHelper implements DbUtils.DbUpgradeListener {
     /**
      * 条件查找 - 分页
      *
-     * @author Leon Liang
+     * @author Emptying
      * @created 2016/7/26 15:57
      */
     public synchronized <T> List<T> searchAllByValue(Class<T> entityClass, String column, String value, int offset,
@@ -350,7 +350,7 @@ public class DbHelper implements DbUtils.DbUpgradeListener {
     /**
      * 条件查找
      *
-     * @author Leon Liang
+     * @author Emptying
      * @created 2016/7/26 15:57
      */
     public synchronized Object searchOneByValue(Class<?> entityClass, String column, String value) {
@@ -364,7 +364,7 @@ public class DbHelper implements DbUtils.DbUpgradeListener {
     /**
      * 自定义Sql查找
      *
-     * @author Leon Liang
+     * @author Emptying
      * @created 2016/7/26 16:57
      */
     public synchronized List<DbModel> searchBySql(SqlInfo sql) {
@@ -379,7 +379,7 @@ public class DbHelper implements DbUtils.DbUpgradeListener {
     /**
      * 保存或更新实体到DB（replace or insert）
      *
-     * @author Leon Liang
+     * @author Emptying
      * @created 2016/7/26 16:00
      */
     public synchronized boolean saveOrUpdateAll(List<?> entity) {
@@ -395,7 +395,7 @@ public class DbHelper implements DbUtils.DbUpgradeListener {
     /**
      * 判断表是否存在
      *
-     * @author Leon Liang
+     * @author Emptying
      * @created 2016/8/3 23:05
      */
     public synchronized boolean tableIsExist(Class<?> cls) {
@@ -412,7 +412,7 @@ public class DbHelper implements DbUtils.DbUpgradeListener {
      *
      * @param
      * @return
-     * @author Stark Zhou
+     * @author Emptying
      * @created 2016/8/3 17:59
      */
     public void forPaginate(StringBuilder sql, int pageNumber, int pageSize, String oldSql) {
@@ -424,7 +424,7 @@ public class DbHelper implements DbUtils.DbUpgradeListener {
     /**
      * 删除整个数据库
      *
-     * @author Leon Liang
+     * @author Emptying
      * @created 2016/8/20 10:49
      */
     public synchronized boolean dropDb() {

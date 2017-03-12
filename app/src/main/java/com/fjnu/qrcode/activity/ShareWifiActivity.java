@@ -50,7 +50,7 @@ public class ShareWifiActivity extends AppCompatActivity {
      * 初始化适配器等
      */
     private void initData() {
-        wifiManage = new WifiManage();
+        wifiManage = new WifiManage(this);
 
         wifiMsgAdapter = new WifiMsgAdapter(wifiManage.read(), this);
         lvWifiMsg.setAdapter(wifiMsgAdapter);
