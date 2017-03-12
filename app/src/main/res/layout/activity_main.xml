@@ -4,28 +4,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#ffffff"
     tools:context=".activity.MainActivity">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="6"
-        android:background="@drawable/bg_main"
         android:gravity="center_horizontal|bottom">
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginBottom="20dp"
-            android:orientation="vertical">
-            <Button
-                android:id="@+id/btn_scan_barcode"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:background="@drawable/bg_main">
+
+            <TextView
+                android:text="扫一扫"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ripple_circle_bg"
-                android:onClick="scan"
-                android:padding="15dp"
-                android:text="扫一扫"
-                android:textColor="#84847d"
+                android:textColor="#ffffff"
                 android:textSize="30sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/scan"
+                android:onClick="scan"
+                android:padding="15dp" />
+
             <TextView
                 android:id="@+id/tv_scan_result"
                 android:layout_width="match_parent"
